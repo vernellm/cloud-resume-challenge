@@ -362,29 +362,6 @@ resource "aws_api_gateway_method_response" "post_response_200" {
   }
 }
 
-
-/*
-resource "aws_api_gateway_model" "empty_model" {
-  rest_api_id  = aws_api_gateway_rest_api.MyResumeAPI.id
-  name         = "EmptyModel"
-  content_type = "application/json"
-  # schema       = "{\n  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\n  \"title\" : \"Empty Schema\",\n  \"type\" : \"object\"\n}"
-  schema = jsonencode({
-    "$schema" = "http://json-schema.org/draft-04/schema#"
-    title = "Empty Schema"
-    type = "object"
-  })
-}
-
-
-resource "aws_api_gateway_integration_response" "options_integration" {
-  rest_api_id = aws_api_gateway_rest_api.MyResumeAPI.id
-  resource_id = aws_api_gateway_resource.LambdaPath.id
-  http_method = aws_api_gateway_method.MyOptionsMethod.http_method
-  status_code = aws_api_gateway_method_response.options_response_200.status_code
-}
-*/
-
 # Deployment of my resource with triggers to indentify the methods and integrations needed
 resource "aws_api_gateway_deployment" "deploy_resume_api" {
   rest_api_id = aws_api_gateway_rest_api.MyResumeAPI.id
