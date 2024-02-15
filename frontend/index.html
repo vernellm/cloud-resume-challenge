@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vernell Mangum</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- HEADER SECTION-->
+    <header>
+        <h1>Vernell Mangum</h1>
+
+        <ul class="header">
+            <li>email: vtmangum@gmail.com</li>
+            <li><a href="https://www.linkedin.com/in/vtmangum17" target="_blank">linkedin: /vtmangum17</a></li>
+            <li><a href="https://github.com/vernellm/" target="_blank">github: vernellm</a></li>
+        </ul>
+
+        <br />
+    </header>
+
+    <!-- MAIN SECTION-->
+    <main>
+        <!-- Section 1 : Education -->
+        <div class="education">
+            <h2>Education</h2>
+
+            <div class="innerContent">
+                <p><b>University of New Orleans</b></p>
+                <p class="sidebar">December 2022</p>
+            </div>
+            <div class="innerContent">
+                <p><em>Bachelor of Science: Computer Science</em></p>
+                <p><em>New Orleans, La</em></p>
+            </div>
+        </div>
+
+        <!-- Section 2 : Skills -->
+        <div class="skills">
+            <h2>Skills</h2>
+
+            <div class="innerContent">
+                <p><b>Languagues</b></p>
+                <p class="sidebar1">Pyhon, Java, Swift, HTML, CSS, JavaScript, SQL, C#, HCL</p>
+            </div>
+
+            <div class="innerContent">
+                <p><b>Technologies</b></p>
+                <p class="sidebar2">Git, REST API, Unity, Xcode, AWS, GitHub, Docker, Terraform</p>
+            </div>
+
+            <div class="innerContent">
+                <p><b>Libraries</b></p>
+                <p class="sidebar3">Node.js, React, NumPy, Pandas, Matplotlib</p>
+            </div>
+        </div>
+
+        <!-- Section 3 : Certifications -->
+        <div class="certs">
+            <h2>Certifications</h2>
+
+            <p><b>Aamazon Web Services</b></p>
+            <p><em>Certified Cloud Practitioner (2023)</em></p>
+            <p>Validation Number: <em>XD4K27Q1V241QDK3</em></p>
+        </div>
+
+        <!-- Section 4 : Projects -->
+        <div class="projects">
+            <h2>Projects</h2>
+
+            <p><b>Automated Text-To-Speech Storage Program w/ Machine Learning (AWS)</b> | <em>Python, Amazon Web Services
+            </em></p>
+            <ul>
+                <li>A simple, automated TTS program that takes any text file on the user's machine, converts that file into a voice file,
+                    and stores the voice file on the user's machine.</li>
+                <li>Used Amazon Polly (ML) and the AWS CLI to convert text files into voice files to be used by the user's machine as
+                    well as multiple AWS Services to automate, store and notify the user that the text file has been stored successfully; including: Amazon Polly, SNS, Lambda, S3, and DynamoDB.</li>
+            </ul>
+
+            <p><b>A Really Loud Mobile App</b> | <em>JavaScript, React Native, Node.js</em></p>
+            <ul>
+                <li>Built an application that demonstrates 4 core operations when manipulating data in mobile applications efficiently;
+                    Create, Read, Update, Delete.</li>
+                <li>The app was built using Javascript, React, and Node. The app allows the user to assemble a team of characters to
+                    carry out different adventures to acquire gold and other goods that can be used to increase a character's level. Each
+                    character has their own unique level, can be sent on adventures, and removed from your team at any time.</li>
+                <li>Adventures have difficulty levels that can determine how much gold a team member will come back with and how
+                    much health the character loses. Implements CRUD features without the use of any external libraries, mainly using Contexts and Providers.</li>
+            </ul>
+
+            <p><b><em><a href="https://github.com/vernellm/" target="_blank">Cloud Resume Challenge</a></em></b> | <em>JavaScript, HTML/CSS, AWS, Terraform</em></p>
+            <ul>
+                <li>A website of my resume (which you're currently looking at) that uses a serverless AWS model for hosting and deployed automatically using Terraform.</li>
+                <li>Uses many AWS services such as: Route53, Lambda, DynamoDB, CloudFront, API Gateway, and S3.</li>
+                <li>Website is hosted using S3 on a secure HTTPS connection using CloudFront. Custom domain name setup using Route53. Uses a Lambda function
+                    to store and update a visitor count that is triggered by an API call using API Gateway.</li>
+                <li>Completely automated the process and implemented CI/CD using Terraform and GitHub Actions. </li>
+                <li>Uses Cypress.js for end-to-end testing which is triggered upon push to GitHub repo.</li>
+            </ul>
+
+        </div>
+
+        <!-- Section 5 : Experience -->
+        <div class="experience">
+            <h2>Experience</h2>
+
+            <div class="innerContent">
+                <p>Best Buy</p>
+                <p>June 2023 - Present</p>
+            </div>
+
+            <div class="innerContent">
+                <p><em>Product Flow Specialist (Shift Lead)</em></p>
+                <p><em>Metairie, La</em></p>
+            </div>
+
+            <ul>
+                <li>Tasked with all logistic operations including reverse logistics, inventory management/accuracy, order management, etc.</li>
+                <li>Analyzed client business processes to propose optimal organization strategies and logistic efficiency.</li>
+            </ul>
+        </div>
+
+        <h3 class="visitCount" data-cy="visitorCount">Visitor Count: </h3>
+
+    </main>
+    <script src="./logic.js"></script>
+</body>
+</html>

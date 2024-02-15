@@ -1,0 +1,82 @@
+/****************** 
+*                 *
+*   MAIN STYLES   * 
+*                 *
+*******************/
+
+body {
+    background-color: #2b2b2b;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: seashell;
+    opacity: 0.9;
+}
+
+h1, .header{
+  text-align: center;
+}
+
+h2 {
+    border-bottom: solid seashell;
+}
+
+p {
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: seashell;
+}
+
+/****************** 
+*                 *
+*   CLASS STYLES  * 
+*                 *
+*******************/
+
+.header li {
+    display: inline;
+    padding: 15px;
+}
+
+.education, .skills, .certs, .projects, .experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 175px;
+    column-gap: 0;
+}
+
+.education > .innerContent, .experience > .innerContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+.innerContent {
+    display: flex;
+    padding: 0 15px;
+}
+
+.sidebar1 {
+    margin-left: 100px;
+}
+
+.sidebar2 {
+    margin-left: 89px;
+}
+
+.sidebar3 {
+    margin-left: 136px;
+}
+
+.visitCount {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .education, .skills, .certs, .projects, .experience {
+        display: inline;
+    }
+}
