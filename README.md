@@ -17,7 +17,8 @@ to serverless-ly deploy a static website consisting of HTML/CSS/Javascript using
 ### Frontend
 
 - Vanilla JavaScript
-Inside of ```frontend``` you will see the HTML/CSS code for my static site
+
+    Inside of ```frontend``` you will see the HTML/CSS code for my static site
 
 ### Backend
 
